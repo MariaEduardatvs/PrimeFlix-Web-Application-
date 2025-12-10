@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PrimeFlix</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>PrimeFlix</h1>
+    <p>Discover your favorite movies!</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Available Movies</h2>
+      <label for="genreFilter">Filter by Genre:</label>
+      <select id="genreFilter">
+        <option value="All">All</option>
+        <option value="Sci-Fi">Sci-Fi</option>
+        <option value="Animation">Animation</option>
+        <option value="Romance">Romance</option>
+        <option value="Adventure">Adventure</option>
+        <option value="Drama">Drama</option>
+      </select>
+      <div id="movie-list"></div>
+    </section>
+
+    <section>
+      <h2>Movies by Genre</h2>
+      <canvas id="genreChart"></canvas>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
